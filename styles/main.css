@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[name=hit-me] {
+  border: none;
+  outline: none;
+  text-align: center;
+  background: transparent;
+  font-size: 32px;
+  color: white;
+  border-bottom: 2px solid white;
+  animation: 1s ease-in-out 0s infinite alternate blink;
+}
+
+input[name=hit-me]:focus {
+  -webkit-animation: none;
+  animation: none;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
