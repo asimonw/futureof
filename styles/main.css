@@ -21,6 +21,7 @@ input[name=hit-me] {
   background: transparent;
   font-size: 32px;
   color: white;
+  mix-blend-mode: difference;
   border-bottom: 2px solid white;
   animation: 1s ease-in-out 0s infinite alternate blink;
 }
